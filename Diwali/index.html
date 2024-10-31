@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #282828;
+      color: #FFD700;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    .container {
+      animation: glow 2s infinite alternate;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0.2em;
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+    .candle {
+      margin-top: 1em;
+      position: relative;
+      width: 10px;
+      height: 40px;
+      background-color: #B8860B;
+      margin: 0 10px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+    .candle:before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #FF4500;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+      animation: flicker 0.5s infinite alternate;
+    }
+    .instagram {
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
+    }
+    .instagram-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .instagram a {
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+      }
+      to {
+        text-shadow: 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF4500;
+      }
+    }
+    @keyframes flicker {
+      from {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+      to {
+        opacity: 0.6;
+        transform: translateY(2px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Happy Diwali ✨</h1>
+    <p>MAYNIP MAA LAKSHMI AND LORD GANESH BLESS YOUR LIFE AND ILLUMINATE YOUR HOME WITH PROSPERITY, HAPPINESS WEALTH, AND ENDLESS JOY</p>
+    <p> !! FORMAXPRO !!😎💗</p>
+    <div class="candle"></div>
+    <div class="candle"></div>
+    <div class="candle"></div>
+    <p><b>MADE BY ANUJ RAJESH YADAV</b> 💗</p>
+    <div class="instagram">
+      <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700">
+        <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.75-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+      </svg>
+      <a href="https://www.instagram.com/offx._anuj_/" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
